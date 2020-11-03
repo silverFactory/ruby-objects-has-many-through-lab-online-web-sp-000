@@ -3,6 +3,7 @@ class Patient
   @@all = []
   def initialize
     @name = name
+    Patient.all << self
   end
   def self.all
     @@all
