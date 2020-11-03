@@ -12,7 +12,7 @@ class Patient
     Appointment.new(date, self, doctor)
   end
   def appointments
-    Appointment.all{|a| a.patient == self}
+    Appointment.all.select{|a| a.patient == self}
   end
   def doctors
     self.appointments.map{|a| a.doctor}
