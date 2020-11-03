@@ -12,6 +12,6 @@ class Genre
     Song.all.select{|s| s.genre == self}
   end
   def artists
-  #  self.songs.map{|s| s.artist}
+    self.songs.map{|s| s.artist}
   end
 end
