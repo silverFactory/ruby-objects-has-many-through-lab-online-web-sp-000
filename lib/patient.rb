@@ -1,7 +1,7 @@
 class Patient
   attr_accessor :name
   @@all = []
-  def initialize
+  def initialize(name)
     @name = name
     Patient.all << self
   end
