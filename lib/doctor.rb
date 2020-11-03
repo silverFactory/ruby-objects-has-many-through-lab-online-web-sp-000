@@ -5,4 +5,7 @@ class Doctor
     @name = name
     Doctor.all << self
   end
+  def self.all
+    @@all
+  end
 end
